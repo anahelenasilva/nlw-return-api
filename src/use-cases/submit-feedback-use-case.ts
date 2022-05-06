@@ -34,6 +34,7 @@ export default class SubmitFeedbackUseCase {
                 `<div>`,
                 `<p>Tipo feedback: ${type}`,
                 `<p>Comentário: ${comment}`,
+                screenshot ? `<img src=${screenshot} />` : null,
                 `</div>`
             ].join('\n')
         })
